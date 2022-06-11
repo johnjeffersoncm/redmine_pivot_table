@@ -68,11 +68,12 @@ module PivottablesHelper
 
     strpformat = ""
     if Setting.date_format == ""
-      strpformat = I18n.t(:"date.formats.default", {:locale => I18n.locale })
+#      strpformat = I18n.t(:"date.formats.default", {:locale => I18n.locale })
+      strpformat = I18n.t(:"date.formats.default")
     else
       strpformat = Setting.date_format
     end
-
+#    strpformat = Setting.date_format
     issues.each{|i|
       formatted_issue = {}
       @query.available_columns.each{|c|
