@@ -73,7 +73,7 @@ Pivot Table, Graphs, Analysis, Redmine, Plugin
 
 Support will only be given to the following versions:
 
-* Redmine version                2.6.0.stable - 4.0.2.stable
+* Redmine version                2.6.0.stable (not tested) - 5.0.5.stable (tested)
 
 
 ## License
