@@ -15,9 +15,9 @@ module ProjectsHelperPatch
       end
     end
     if User.current.allowed_to?(:view_time_entries, nil, :global => true)
-      links << link_to(l(:label_overall_spent_time), time_entries_path)
+      links << link_to(l(:label_spent_time), time_entries_path)
     end
-    links << link_to(l(:label_overall_activity), activity_path)
+    links << link_to(l(:label_activity), activity_path)
     links.join(" | ").html_safe
   end
 end
